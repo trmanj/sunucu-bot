@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: sunucu-bot
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      apt-get update && apt-get install -y chromium chromium-driver
+    startCommand: python main.py
+    
