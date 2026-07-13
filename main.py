@@ -43,3 +43,4 @@ async def ac(ctx):
         driver.quit()
 
 
+bot.run(os.environ['DISCORD_TOKEN'])
